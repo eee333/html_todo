@@ -1,0 +1,55 @@
+body{
+    background-color: #5a6; 
+    height: 100vh;
+    display: grid;
+    grid-template-rows: min-content auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2{
+    margin: 10px 0;        
+}
+h1{
+    margin-left: 20px;
+}
+.container{
+    display: grid;
+    background-color: #7b7;
+    grid-auto-columns: minmax(300px, 400px);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    overflow: auto;
+    padding: 10px
+}
+.board{
+    background-color: #ccc;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 100%;
+    overflow: auto;
+}
+.task{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin: 10px;
+}
+li>img{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.status-bar{
+    display: grid;
+    grid-template-columns: auto 64px;
+    align-items: center;
+}
